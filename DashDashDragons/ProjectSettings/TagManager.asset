@@ -5,8 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
-  - Arrow
   - Enemy
+  - ArrowUp
+  - ArrowDown
+  - ArrowLeft
+  - ArrowRight
   layers:
   - Default
   - TransparentFX

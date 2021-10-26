@@ -24,14 +24,28 @@ public class DetectCollisions : MonoBehaviour
             playerController.rotationY = 90f;
             //player.transform.Rotate(0f, 90f, 0f);
         }
-        if (other.gameObject.tag == "Arrow")
+        if (other.gameObject.tag == "ArrowRight")
+        {   
+            playerController.eulerRotationY = 90f;   
+        }
+        if (other.gameObject.tag == "ArrowLeft")
         {
-            playerController.rotationY = -90f;
-            //player.transform.Rotate(0f, -90f, 0f);
+            playerController.eulerRotationY = 270f;
+        }
+        if (other.gameObject.tag == "ArrowUp")
+        {
+            playerController.eulerRotationY = 0f;
+        }
+        if (other.gameObject.tag == "ArrowDown")
+        {
+            playerController.eulerRotationY = 180f;
         }
         if (other.gameObject.tag == "Enemy")
         {
-            GetComponent<PlayerController>().enabled = false;
+            if (player.tag != "Enemy")
+            {
+                GetComponent<PlayerController>().enabled = false;
+            }
         }
 
     }
