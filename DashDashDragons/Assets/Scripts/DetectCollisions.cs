@@ -5,6 +5,7 @@ using UnityEngine;
 public class DetectCollisions : MonoBehaviour
 {
     public GameObject player;
+    public PlayerController playerController;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,22 @@ public class DetectCollisions : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        player.transform.Rotate(0f, 90f,0f);
+        if (other.gameObject.tag == "Obstacle")
+        {
+            playerController.rotationY = 90f;
+            //player.transform.Rotate(0f, 90f, 0f);
+        }
+        if (other.gameObject.tag == "Arrow")
+        {
+            playerController.rotationY = -90f;
+            //player.transform.Rotate(0f, -90f, 0f);
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            GetComponent<PlayerController>().enabled = false;
+        }
+
     }
 }

@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public Transform player;
     //movement direction
     public Vector3 vectorMove;
+    //variable to store rotation value
+    public float rotationY;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,7 @@ public class PlayerController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
         if (Vector3.Distance(transform.position, movePoint.position) == 0f)
         {
+            GridMovement();
             PlayerDirection();
             movePoint.position += vectorMove;
         }
@@ -51,5 +55,11 @@ public class PlayerController : MonoBehaviour
         {
             vectorMove.Set(0, 0, -1);
         }
+    }
+    public void GridMovement()
+    {
+        player.transform.Rotate(0f, rotationY, 0f);
+        rotationY = 0f;
+
     }
 }
