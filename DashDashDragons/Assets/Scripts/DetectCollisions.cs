@@ -6,10 +6,11 @@ public class DetectCollisions : MonoBehaviour
 {
     public GameObject player;
     public PlayerController playerController;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -47,6 +48,13 @@ public class DetectCollisions : MonoBehaviour
                 GetComponent<PlayerController>().enabled = false;
             }
         }
-
+        if (other.gameObject.tag == "Finish")
+        {
+            if (player.tag != "Enemy")
+            {
+                gameManager.LevelExit();
+                Debug.Log("FINISH!");
+            }
+        }
     }
 }

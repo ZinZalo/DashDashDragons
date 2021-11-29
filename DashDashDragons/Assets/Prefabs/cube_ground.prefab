@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1038902026113998061}
   - component: {fileID: 4162786714625659720}
   - component: {fileID: 2171235572036315010}
+  - component: {fileID: 3909904339744192060}
   m_Layer: 0
   m_Name: cube_ground
   m_TagString: Untagged
@@ -81,3 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3909904339744192060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369641859007710807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade1802350b107f4ca5f0f57906f5ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upArrowPrefab: {fileID: 1888377213694988292, guid: deb93cf618796fe41a99ee8565749726, type: 3}
+  downArrowPrefab: {fileID: 2281758980429431525, guid: 9c04b1bbea704364994f05aa2365ea9a, type: 3}
+  leftArrowPrefab: {fileID: 6992786356288969375, guid: 99c09de313cd8a14f901d0f68e0e7adc, type: 3}
+  rightArrowPrefab: {fileID: 8986960665575378537, guid: 11d6401ba10d604439e841239ae078bc, type: 3}
