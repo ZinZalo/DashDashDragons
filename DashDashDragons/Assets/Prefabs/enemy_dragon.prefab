@@ -228,6 +228,7 @@ MonoBehaviour:
   player: {fileID: 2118597503465059476}
   vectorMove: {x: 0, y: 0, z: 0}
   rotationY: 0
+  eulerRotationY: 0
 --- !u!114 &3821495527228589353
 MonoBehaviour:
   m_ObjectHideFlags: 0
