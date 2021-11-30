@@ -18,15 +18,15 @@ public class DetectCollisions : MonoBehaviour
     {
         
     }
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Obstacle")
         {
             playerController.rotationY = 90f;
-            //player.transform.Rotate(0f, 90f, 0f);
         }
         if (other.gameObject.tag == "ArrowRight")
-        {   
+        {
             playerController.eulerRotationY = 90f;   
         }
         if (other.gameObject.tag == "ArrowLeft")

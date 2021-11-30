@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     //variable to store rotation value
     public float rotationY;
     public float eulerRotationY;
+    private RaycastHit hit;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
         PlayerDirection();
         movePoint.parent = null;
         movePoint.position += vectorMove;
+
     }
 
     // Update is called once per frame
@@ -33,6 +35,16 @@ public class PlayerController : MonoBehaviour
             MovementRotation();
             PlayerDirection();
             movePoint.position += vectorMove;
+            if (Physics.Linecast(transform.position, movePoint.transform.position, out hit))
+            {
+                if (hit.transform.tag == "Obstacle")
+                {
+                    movePoint.position -= vectorMove;
+                    rotationY = 90f;
+                    MovementRotation();
+                    PlayerDirection();
+                }
+            }
         }
     }
 

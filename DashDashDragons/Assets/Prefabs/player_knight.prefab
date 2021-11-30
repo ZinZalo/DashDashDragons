@@ -426,6 +426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4385605417668392926}
   playerController: {fileID: 218019900}
+  gameManager: {fileID: 0}
 --- !u!1 &5271915159630997156
 GameObject:
   m_ObjectHideFlags: 0
