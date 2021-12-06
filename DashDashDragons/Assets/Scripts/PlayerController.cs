@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     //variable to store rotation value
     public float rotationY;
     public float eulerRotationY;
+    //raycast to detect objects between player and movePoint
     private RaycastHit hit;
 
     // Start is called before the first frame update
@@ -29,12 +30,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //moves player towards movePoint
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+        //executed once player reaches movepoint
         if (Vector3.Distance(transform.position, movePoint.position) == 0f)
         {
             MovementRotation();
             PlayerDirection();
             movePoint.position += vectorMove;
+            //uses raycast to check if theres a wall between player and movepoint. if true, then returns movepoint to player location
             if (Physics.Linecast(transform.position, movePoint.transform.position, out hit))
             {
                 if (hit.transform.tag == "Obstacle")
@@ -71,12 +75,14 @@ public class PlayerController : MonoBehaviour
     }
     public void MovementRotation()
     {
+        //Sets player's absolute rotation
         if (eulerRotationY != -1f)
         {
             player.transform.rotation = Quaternion.Euler(0, eulerRotationY, 0);
             eulerRotationY = -1f;
             rotationY = 0f;
         }
+        //Sets player's relative rotation
         if (rotationY != 0f) {
             player.transform.Rotate(0f, rotationY, 0f);
             rotationY = 0f;
