@@ -10,6 +10,7 @@ public class DetectCollisions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //find gamemanager in scene
         gameManager = FindObjectOfType<GameManager>();
     }
 
@@ -52,6 +53,7 @@ public class DetectCollisions : MonoBehaviour
         {
             if (player.tag != "Enemy")
             {
+                //TODO: once all levels are finished this code will move to the next level
                 gameManager.LevelExit();
                 Debug.Log("FINISH!");
             }

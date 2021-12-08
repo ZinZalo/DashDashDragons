@@ -19,10 +19,12 @@ public class ArrowPlacer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get currentArrow from gameManager
         currentArrow = gameManager.currentArrow;
 
     }
 
+    //Creates arrow block on click
     private void OnMouseDown()
     {
         switch (currentArrow)

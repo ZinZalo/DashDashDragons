@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> characters;
+    //currentArrow stores the currently selected arrow as a variable.
     //0: Nothing
     //1: Up
     //2: Down
@@ -43,9 +44,11 @@ public class GameManager : MonoBehaviour
 
     public void LevelExit()
     {
+        //TODO: once all levels are finished this code will move to the next level
         Stop();
     }
 
+    //Load test level
     public void LoadTest()
     {
         SceneManager.LoadScene("Test Level", LoadSceneMode.Single);
