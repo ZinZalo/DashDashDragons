@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4162786714625659720}
   - component: {fileID: 2171235572036315010}
   - component: {fileID: 3909904339744192060}
+  - component: {fileID: 3391052129084250180}
+  - component: {fileID: 1126634907}
   m_Layer: 0
   m_Name: cube_ground
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369641859007710807}
-  m_LocalRotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.506988, y: 2.1092625, z: -1.4983392}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -98,3 +100,29 @@ MonoBehaviour:
   downArrowPrefab: {fileID: 2281758980429431525, guid: 9c04b1bbea704364994f05aa2365ea9a, type: 3}
   leftArrowPrefab: {fileID: 6992786356288969375, guid: 99c09de313cd8a14f901d0f68e0e7adc, type: 3}
   rightArrowPrefab: {fileID: 8986960665575378537, guid: 11d6401ba10d604439e841239ae078bc, type: 3}
+--- !u!65 &3391052129084250180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369641859007710807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1126634907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369641859007710807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
