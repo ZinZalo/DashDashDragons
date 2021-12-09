@@ -61,7 +61,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8165790683688479229, guid: 4f795d251b3f33b41a62a5af05b6edf2, type: 3}
       propertyPath: m_Name
-      value: castle_wall 1 (7)
+      value: castle_wall_long
       objectReference: {fileID: 0}
+    - target: {fileID: 8247193313101834572, guid: 4f795d251b3f33b41a62a5af05b6edf2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fa783375fd12d584da8b6f653ff00860, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f795d251b3f33b41a62a5af05b6edf2, type: 3}
