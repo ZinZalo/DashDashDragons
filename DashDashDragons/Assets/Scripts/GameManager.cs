@@ -14,6 +14,11 @@ public class GameManager : MonoBehaviour
     //3: Left
     //4: Right
     public int currentArrow;
+    public int upArrowAmount;
+    public int downArrowAmount;
+    public int leftArrowAmount;
+    public int rightArrowAmount;
+    public bool isEasy = false;
     public Button nextLevel;
 
     // Start is called before the first frame update
@@ -21,6 +26,10 @@ public class GameManager : MonoBehaviour
     {
         Stop();
         currentArrow = 0;
+        if (isEasy == true)
+        {
+            upArrowAmount = downArrowAmount = leftArrowAmount = rightArrowAmount = 999;
+        }
 
     }
 

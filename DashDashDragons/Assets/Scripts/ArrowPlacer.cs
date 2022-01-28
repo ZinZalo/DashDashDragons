@@ -5,6 +5,10 @@ using UnityEngine;
 public class ArrowPlacer : MonoBehaviour
 {
     private int currentArrow;
+    private int upArrowAmount;
+    private int downArrowAmount;
+    private int leftArrowAmount;
+    private int rightArrowAmount;
     private GameManager gameManager;
     public GameObject upArrowPrefab;
     public GameObject downArrowPrefab;
@@ -21,6 +25,11 @@ public class ArrowPlacer : MonoBehaviour
     {
         //get currentArrow from gameManager
         currentArrow = gameManager.currentArrow;
+        //get arrow amounts
+        upArrowAmount = gameManager.upArrowAmount;
+        downArrowAmount = gameManager.downArrowAmount;
+        leftArrowAmount = gameManager.leftArrowAmount;
+        rightArrowAmount = gameManager.rightArrowAmount;
 
     }
 
@@ -32,20 +41,36 @@ public class ArrowPlacer : MonoBehaviour
             case 0:
                 break;
             case 1:
-                Instantiate(upArrowPrefab, transform.position, upArrowPrefab.transform.rotation);
-                Destroy(this.gameObject);
+                if (upArrowAmount > 0)
+                {
+                    Instantiate(upArrowPrefab, transform.position, upArrowPrefab.transform.rotation);
+                    Destroy(this.gameObject);
+                    gameManager.upArrowAmount--;
+                }
                 break;
             case 2:
-                Instantiate(downArrowPrefab, transform.position, downArrowPrefab.transform.rotation);
-                Destroy(this.gameObject);
+                if (downArrowAmount > 0)
+                {
+                    Instantiate(downArrowPrefab, transform.position, downArrowPrefab.transform.rotation);
+                    Destroy(this.gameObject);
+                    gameManager.downArrowAmount--;
+                }
                 break;
             case 3:
-                Instantiate(leftArrowPrefab, transform.position, leftArrowPrefab.transform.rotation);
-                Destroy(this.gameObject);
+                if (leftArrowAmount > 0)
+                {
+                    Instantiate(leftArrowPrefab, transform.position, leftArrowPrefab.transform.rotation);
+                    Destroy(this.gameObject);
+                    gameManager.leftArrowAmount--;
+                }
                 break;
             case 4:
-                Instantiate(rightArrowPrefab, transform.position, rightArrowPrefab.transform.rotation);
-                Destroy(this.gameObject);
+                if (rightArrowAmount > 0)
+                {
+                    Instantiate(rightArrowPrefab, transform.position, rightArrowPrefab.transform.rotation);
+                    Destroy(this.gameObject);
+                    gameManager.rightArrowAmount--;
+                }
                 break;
         }
     }
