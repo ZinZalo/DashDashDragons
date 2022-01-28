@@ -24,7 +24,7 @@ public class DetectCollisions : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle")
         {
-            playerController.rotationY = 90f;
+            playerController.rotationY = 1;
         }
         if (other.gameObject.tag == "ArrowRight")
         {

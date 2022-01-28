@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     //movement direction
     public Vector3 vectorMove;
     //variable to store rotation value
-    public float rotationY;
+    public int rotationY;
     public float eulerRotationY;
     //raycast to detect objects between player and movePoint
     private RaycastHit hit;
@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.transform.tag == "Obstacle")
                 {
                     movePoint.position -= vectorMove;
-                    rotationY = 90f;
+                    rotationY = 1;
                     MovementRotation();
                     PlayerDirection();
                 }
@@ -55,20 +55,38 @@ public class PlayerController : MonoBehaviour
     void PlayerDirection()
     {
         //sets knight's movement direction based on it's rotation
-       
-        if (player.eulerAngles.y == 0f)
+        /* current
+         if (player.eulerAngles.y == 0f)
+         {
+             vectorMove.Set(-1, 0, 0);
+         }
+         else if (player.eulerAngles.y == 90f)
+         {
+             vectorMove.Set(0, 0, 1);
+         }
+         else if (player.eulerAngles.y == 180f)
+         {
+             vectorMove.Set(1, 0, 0);
+         }
+         else if (player.eulerAngles.y == 270f)
+         {
+             vectorMove.Set(0, 0, -1);
+         }
+        */
+
+        if (player.transform.rotation.eulerAngles.y == 0f)
         {
             vectorMove.Set(-1, 0, 0);
         }
-        else if (player.eulerAngles.y == 90f)
+        else if (player.transform.rotation.eulerAngles.y == 90f)
         {
             vectorMove.Set(0, 0, 1);
         }
-        else if (player.eulerAngles.y == 180f)
+        else if (player.transform.rotation.eulerAngles.y == 180f)
         {
             vectorMove.Set(1, 0, 0);
         }
-        else if (player.eulerAngles.y == 270f)
+        else if (player.transform.rotation.eulerAngles.y == 270f)
         {
             vectorMove.Set(0, 0, -1);
         }
@@ -78,14 +96,14 @@ public class PlayerController : MonoBehaviour
         //Sets player's absolute rotation
         if (eulerRotationY != -1f)
         {
-            player.transform.rotation = Quaternion.Euler(0, eulerRotationY, 0);
+            player.transform.eulerAngles = new Vector3(0, eulerRotationY, 0);
             eulerRotationY = -1f;
-            rotationY = 0f;
+            rotationY = 0;
         }
         //Sets player's relative rotation
-        if (rotationY != 0f) {
-            player.transform.Rotate(0f, rotationY, 0f);
-            rotationY = 0f;
+        if (rotationY != 0) {
+            player.transform.Rotate(0f, 90f, 0f);
+            rotationY = 0;
         }
 
     }
