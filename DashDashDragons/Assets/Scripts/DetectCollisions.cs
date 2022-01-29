@@ -22,41 +22,36 @@ public class DetectCollisions : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Obstacle")
+        switch (other.gameObject.tag)
         {
-            playerController.rotationY = 1;
-        }
-        if (other.gameObject.tag == "ArrowRight")
-        {
-            playerController.eulerRotationY = 90f;   
-        }
-        if (other.gameObject.tag == "ArrowLeft")
-        {
-            playerController.eulerRotationY = 270f;
-        }
-        if (other.gameObject.tag == "ArrowUp")
-        {
-            playerController.eulerRotationY = 0f;
-        }
-        if (other.gameObject.tag == "ArrowDown")
-        {
-            playerController.eulerRotationY = 180f;
-        }
-        if (other.gameObject.tag == "Enemy")
-        {
-            if (player.tag != "Enemy")
-            {
-                GetComponent<PlayerController>().enabled = false;
-            }
-        }
-        if (other.gameObject.tag == "Finish")
-        {
-            if (player.tag != "Enemy")
-            {
-                //TODO: once all levels are finished this code will move to the next level
-                gameManager.LevelExit();
-                Debug.Log("FINISH!");
-            }
+            case "Obstacle":
+                playerController.rotationY = 1;
+                break;
+            case "ArrowRight":
+                playerController.eulerRotationY = 90f;
+                break;
+            case "ArrowLeft":
+                playerController.eulerRotationY = 270f;
+                break;
+            case "ArrowUp":
+                playerController.eulerRotationY = 0f;
+                break;
+            case "ArrowDown":
+                playerController.eulerRotationY = 180;
+                break;
+            case "Enemy":
+                if (player.tag != "Enemy")
+                {
+                    GetComponent<PlayerController>().enabled = false;
+                }
+                break;
+            case "Finish":
+                if (player.tag != "Enemy")
+                {
+                    gameManager.LevelExit();
+                    Debug.Log("FINISH!");
+                }
+                break;
         }
     }
 }

@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     //object that tells where to move in the grid
     public Transform movePoint;
-    public Transform player;
+    //public Transform player;
+    public GameObject player;
     //movement direction
     public Vector3 vectorMove;
     //variable to store rotation value
@@ -50,45 +51,25 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        Debug.Log(player.transform.rotation.eulerAngles.y);
     }
 
     void PlayerDirection()
     {
-        //sets knight's movement direction based on it's rotation
-        /* current
-         if (player.eulerAngles.y == 0f)
-         {
-             vectorMove.Set(-1, 0, 0);
-         }
-         else if (player.eulerAngles.y == 90f)
-         {
-             vectorMove.Set(0, 0, 1);
-         }
-         else if (player.eulerAngles.y == 180f)
-         {
-             vectorMove.Set(1, 0, 0);
-         }
-         else if (player.eulerAngles.y == 270f)
-         {
-             vectorMove.Set(0, 0, -1);
-         }
-        */
-
-        if (player.transform.rotation.eulerAngles.y == 0f)
+        switch (player.transform.rotation.eulerAngles.y)
         {
-            vectorMove.Set(-1, 0, 0);
-        }
-        else if (player.transform.rotation.eulerAngles.y == 90f)
-        {
-            vectorMove.Set(0, 0, 1);
-        }
-        else if (player.transform.rotation.eulerAngles.y == 180f)
-        {
-            vectorMove.Set(1, 0, 0);
-        }
-        else if (player.transform.rotation.eulerAngles.y == 270f)
-        {
-            vectorMove.Set(0, 0, -1);
+            case 0f:
+                vectorMove.Set(-1, 0, 0);
+                break;
+            case 90f:
+                vectorMove.Set(0, 0, 1);
+                break;
+            case 180f:
+                vectorMove.Set(1, 0, 0);
+                break;
+            case 270f:
+                vectorMove.Set(0, 0, -1);
+                break;
         }
     }
     public void MovementRotation()
@@ -96,7 +77,14 @@ public class PlayerController : MonoBehaviour
         //Sets player's absolute rotation
         if (eulerRotationY != -1f)
         {
-            player.transform.eulerAngles = new Vector3(0, eulerRotationY, 0);
+            if (eulerRotationY == 180)
+            {
+                player.transform.rotation = new Quaternion(0, 1, 0, 0);
+            }
+            if (eulerRotationY != 180)
+            {
+                player.transform.eulerAngles = new Vector3(0, eulerRotationY, 0);
+            }
             eulerRotationY = -1f;
             rotationY = 0;
         }

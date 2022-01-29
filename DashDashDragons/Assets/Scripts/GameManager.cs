@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
         {
             upArrowAmount = downArrowAmount = leftArrowAmount = rightArrowAmount = 999;
         }
-
     }
 
     // Update is called once per frame
