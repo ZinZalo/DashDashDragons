@@ -11,6 +11,7 @@ TagManager:
   - ArrowLeft
   - ArrowRight
   - ExtraCollider
+  - Key
   layers:
   - Default
   - TransparentFX
