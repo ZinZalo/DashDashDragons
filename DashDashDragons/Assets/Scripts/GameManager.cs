@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public int downArrowAmount;
     public int leftArrowAmount;
     public int rightArrowAmount;
-    public bool isEasy = false;
+    static bool isEasy = false;
     public Button nextLevel;
 
     // Start is called before the first frame update
@@ -50,6 +50,18 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void SetDifficulty()
+    {
+        switch (isEasy)
+        {
+            case true:
+                isEasy = false;
+                break;
+            case false:
+                isEasy = true;
+                break;
+        }
     }
 
     public void LevelExit()
