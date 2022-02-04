@@ -20,10 +20,12 @@ public class GameManager : MonoBehaviour
     public int rightArrowAmount;
     static bool isEasy = false;
     public Button nextLevel;
+    private UiManager uiManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        uiManager = FindObjectOfType<UiManager>();
         Stop();
         currentArrow = 0;
         if (isEasy == true)
@@ -68,7 +70,7 @@ public class GameManager : MonoBehaviour
     {
         //TODO: once all levels are finished this code will move to the next level
         Stop();
-        nextLevel.gameObject.SetActive(true);
+        uiManager.LevelExit();
     }
 
     //Load test level

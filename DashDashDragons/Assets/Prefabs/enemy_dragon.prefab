@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   movePoint: {fileID: 571539695}
-  player: {fileID: 2118597503465059476}
+  player: {fileID: 1597957189570407982}
   vectorMove: {x: 0, y: 0, z: 0}
   rotationY: 0
   eulerRotationY: 0

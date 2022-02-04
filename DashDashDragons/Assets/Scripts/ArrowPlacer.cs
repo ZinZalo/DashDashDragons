@@ -46,6 +46,7 @@ public class ArrowPlacer : MonoBehaviour
                     Instantiate(upArrowPrefab, transform.position, upArrowPrefab.transform.rotation);
                     Destroy(this.gameObject);
                     gameManager.upArrowAmount--;
+                    gameManager.currentArrow = 0;
                 }
                 break;
             case 2:
@@ -54,6 +55,7 @@ public class ArrowPlacer : MonoBehaviour
                     Instantiate(downArrowPrefab, transform.position, downArrowPrefab.transform.rotation);
                     Destroy(this.gameObject);
                     gameManager.downArrowAmount--;
+                    gameManager.currentArrow = 0;
                 }
                 break;
             case 3:
@@ -62,6 +64,7 @@ public class ArrowPlacer : MonoBehaviour
                     Instantiate(leftArrowPrefab, transform.position, leftArrowPrefab.transform.rotation);
                     Destroy(this.gameObject);
                     gameManager.leftArrowAmount--;
+                    gameManager.currentArrow = 0;
                 }
                 break;
             case 4:
@@ -70,6 +73,7 @@ public class ArrowPlacer : MonoBehaviour
                     Instantiate(rightArrowPrefab, transform.position, rightArrowPrefab.transform.rotation);
                     Destroy(this.gameObject);
                     gameManager.rightArrowAmount--;
+                    gameManager.currentArrow = 0;
                 }
                 break;
         }
