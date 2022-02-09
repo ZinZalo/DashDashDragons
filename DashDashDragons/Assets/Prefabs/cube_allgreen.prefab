@@ -7,10 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5040254351398440718, guid: f869f184c6be8204c90f8fef2ba48c19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683128650149880182, guid: f869f184c6be8204c90f8fef2ba48c19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7895257472429448880, guid: f869f184c6be8204c90f8fef2ba48c19, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0f7e12c75b179fb4b8088a55feb6639e, type: 2}
+    - target: {fileID: 8336252969815796905, guid: f869f184c6be8204c90f8fef2ba48c19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543727234274852709, guid: f869f184c6be8204c90f8fef2ba48c19, type: 3}
       propertyPath: m_Name
       value: cube_allgreen
