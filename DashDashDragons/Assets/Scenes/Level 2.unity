@@ -3726,11 +3726,11 @@ MonoBehaviour:
   - {fileID: 4385605417668392926, guid: f45669405549270438a1991f410818e5, type: 3}
   - {fileID: 1597957189570407982, guid: ffac92e1a3035654699c83a57041346f, type: 3}
   currentArrow: 0
-  upArrowAmount: 0
+  upArrowAmount: 1
   downArrowAmount: 0
   leftArrowAmount: 0
   rightArrowAmount: 0
-  nextLevel: {fileID: 0}
+  haveKey: 0
 --- !u!4 &1669321411
 Transform:
   m_ObjectHideFlags: 0

@@ -40,13 +40,17 @@ public class UiManager : MonoBehaviour
         LeftArrowCheck();
         RightArrowCheck();
     }
+
     private void UpArrowCheck()
     {
         if (upArrowAmount <= 0)
         {
             upArrowButton.interactable = false;
         }
-        upArrowText.text = upArrowAmount.ToString();
+        if (upArrowAmount <= 100)
+        {
+            upArrowText.text = upArrowAmount.ToString();
+        }
     }
     private void DownArrowCheck()
     {
@@ -54,7 +58,10 @@ public class UiManager : MonoBehaviour
         {
             downArrowButton.interactable = false;
         }
-        downArrowText.text = downArrowAmount.ToString();
+        if (downArrowAmount <= 100)
+        {
+            downArrowText.text = downArrowAmount.ToString();
+        }
     }
     private void LeftArrowCheck()
     {
@@ -62,7 +69,10 @@ public class UiManager : MonoBehaviour
         {
             leftArrowButton.interactable = false;
         }
-        leftArrowText.text = leftArrowAmount.ToString();
+        if (leftArrowAmount <= 100)
+        {
+            leftArrowText.text = leftArrowAmount.ToString();
+        }
     }
     private void RightArrowCheck()
     {
@@ -70,7 +80,10 @@ public class UiManager : MonoBehaviour
         {
             rightArrowButton.interactable = false;
         }
-        rightArrowText.text = rightArrowAmount.ToString();
+        if (rightArrowAmount <= 100)
+        {
+            rightArrowText.text = rightArrowAmount.ToString();
+        }
     }
     public void Play()
     {

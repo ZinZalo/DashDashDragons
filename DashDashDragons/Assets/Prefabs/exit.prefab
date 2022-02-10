@@ -55,5 +55,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: exit
       objectReference: {fileID: 0}
+    - target: {fileID: 879024234861628331, guid: 879777a07c626ee4b9ea2f5d253d9178, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 879777a07c626ee4b9ea2f5d253d9178, type: 3}

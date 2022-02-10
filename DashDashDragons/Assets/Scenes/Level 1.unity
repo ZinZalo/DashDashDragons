@@ -1403,11 +1403,11 @@ MonoBehaviour:
   - {fileID: 4385605417668392926, guid: f45669405549270438a1991f410818e5, type: 3}
   - {fileID: 1597957189570407982, guid: ffac92e1a3035654699c83a57041346f, type: 3}
   currentArrow: 0
-  upArrowAmount: 1
+  upArrowAmount: 0
   downArrowAmount: 0
   leftArrowAmount: 0
-  rightArrowAmount: 0
-  nextLevel: {fileID: 0}
+  rightArrowAmount: 1
+  haveKey: 0
 --- !u!4 &396379867
 Transform:
   m_ObjectHideFlags: 0
@@ -1866,6 +1866,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7888100286884508378, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471691, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_Name
       value: Canvas
