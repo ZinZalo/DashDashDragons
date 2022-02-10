@@ -12,6 +12,7 @@ TagManager:
   - ArrowRight
   - ExtraCollider
   - Key
+  - FinishLock
   layers:
   - Default
   - TransparentFX

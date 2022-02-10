@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
 {
     private GameManager gameManager;
     public GameObject nextLevel;
+    public GameObject keyIndicator;
     private int upArrowAmount;
     private int downArrowAmount;
     private int leftArrowAmount;
@@ -127,5 +128,10 @@ public class UiManager : MonoBehaviour
     public void SelectRightArrow()
     {
         gameManager.SelectRightArrow();
+    }
+
+    public void KeyIndicatorActive()
+    {
+        keyIndicator.SetActive(true);
     }
 }
