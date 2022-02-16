@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        Debug.Log(player.transform.rotation.eulerAngles.y);
     }
 
     void PlayerDirection()

@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2691588338969583698, guid: c1afc558a84746e4bb19e84b8571f2c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998016936371326148, guid: c1afc558a84746e4bb19e84b8571f2c8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998016936371326149, guid: c1afc558a84746e4bb19e84b8571f2c8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5988829890790648312, guid: c1afc558a84746e4bb19e84b8571f2c8, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -613,6 +625,7 @@ MonoBehaviour:
   downArrowAmount: 0
   leftArrowAmount: 0
   rightArrowAmount: 2
+  haveKey: 0
   nextLevel: {fileID: 0}
 --- !u!4 &1446515817
 Transform:

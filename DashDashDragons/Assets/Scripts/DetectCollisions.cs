@@ -52,6 +52,27 @@ public class DetectCollisions : MonoBehaviour
                     Debug.Log("FINISH!");
                 }
                 break;
+            case "Key":
+                if (player.tag != "Enemy")
+                {
+                    gameManager.KeyGetter();
+                    Destroy(other.gameObject);
+                }
+                break;
+            case "FinishLock":
+                if (player.tag != "Enemy")
+                {
+                    if (gameManager.haveKey == true)
+                    {
+                        gameManager.LevelExit();
+                        Debug.Log("FINISH!");
+                    }
+                    if (gameManager.haveKey == false) 
+                    {
+                        Debug.Log("NO KEY");
+                    }
+                }
+                break;
         }
     }
 }

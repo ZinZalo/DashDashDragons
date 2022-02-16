@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public int leftArrowAmount;
     public int rightArrowAmount;
     static bool isEasy = false;
-    public Button nextLevel;
+    public bool haveKey = false;
     private UiManager uiManager;
 
     // Start is called before the first frame update
@@ -117,5 +117,11 @@ public class GameManager : MonoBehaviour
     public void SelectRightArrow()
     {
         currentArrow = 4;
+    }
+
+    public void KeyGetter()
+    {
+        haveKey = true;
+        uiManager.KeyIndicatorActive();
     }
 }
