@@ -7453,8 +7453,7 @@ MonoBehaviour:
   downArrowAmount: 0
   leftArrowAmount: 0
   rightArrowAmount: 0
-  isEasy: 1
-  nextLevel: {fileID: 0}
+  haveKey: 0
 --- !u!4 &1694496642
 Transform:
   m_ObjectHideFlags: 0
