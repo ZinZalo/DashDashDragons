@@ -8,6 +8,8 @@ public class UiManager : MonoBehaviour
 {
     private GameManager gameManager;
     public GameObject nextLevel;
+    public GameObject gameEndButton;
+    public GameObject gameEndText;
     public GameObject keyIndicator;
     private int upArrowAmount;
     private int downArrowAmount;
@@ -100,17 +102,52 @@ public class UiManager : MonoBehaviour
     }
     public void LevelExit()
     {
-        //TODO: once all levels are finished this code will move to the next level
         nextLevel.gameObject.SetActive(true);
+    }
+    public void FinalExit()
+    {
+        gameEndButton.gameObject.SetActive(true);
+        gameEndText.gameObject.SetActive(true);
     }
     public void LoadLevel1()
     {
         gameManager.LoadLevel1();
     }
-
     public void LoadLevel2()
     {
         gameManager.LoadLevel2();
+    }
+    public void LoadLevel3()
+    {
+        gameManager.LoadLevelA();
+    }
+    public void LoadLevel4()
+    {
+        gameManager.LoadLevelB();
+    }
+    public void LoadLevel5()
+    {
+        gameManager.LoadLevelR();
+    }
+    public void LoadLevel6()
+    {
+        gameManager.LoadLevelS();
+    }
+    public void LoadLevel7()
+    {
+        gameManager.LoadLevelAl();
+    }
+    public void LoadLevel8()
+    {
+        gameManager.LoadLevelM();
+    }
+    public void LoadLevel9()
+    {
+        gameManager.LoadLevelC();
+    }
+    public void LoadLevel10()
+    {
+        gameManager.LoadLevelE();
     }
 
     public void LoadTitle()

@@ -313,6 +313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7888100286884508379, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel5
+      objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471691, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -327,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471695, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471695, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_AnchorMax.x
@@ -638,7 +642,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &591692671
 PrefabInstance:
@@ -1077,7 +1081,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1020478097
 PrefabInstance:
@@ -1217,7 +1221,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 24, y: -45, z: 0}
 --- !u!1001 &1185583788
 PrefabInstance:
@@ -1314,6 +1318,7 @@ MonoBehaviour:
   leftArrowAmount: 0
   rightArrowAmount: 2
   haveKey: 0
+  isFinalLevel: 0
 --- !u!4 &1446515817
 Transform:
   m_ObjectHideFlags: 0
@@ -1326,7 +1331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1510043264
 PrefabInstance:

@@ -1351,6 +1351,7 @@ MonoBehaviour:
   leftArrowAmount: 0
   rightArrowAmount: 1
   haveKey: 0
+  isFinalLevel: 0
 --- !u!4 &396379867
 Transform:
   m_ObjectHideFlags: 0
@@ -1363,7 +1364,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &457147413
 PrefabInstance:
@@ -1812,6 +1813,10 @@ PrefabInstance:
     - target: {fileID: 7888100286884508378, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7888100286884508379, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel2
       objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471691, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_Name

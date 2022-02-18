@@ -161,6 +161,7 @@ MonoBehaviour:
   leftArrowAmount: 0
   rightArrowAmount: 0
   haveKey: 0
+  isFinalLevel: 0
 --- !u!4 &14019189
 Transform:
   m_ObjectHideFlags: 0
@@ -173,7 +174,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91394914
 GameObject:
@@ -239,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &110760203
 PrefabInstance:
@@ -389,7 +390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &314481164
 PrefabInstance:
@@ -643,7 +644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 24, y: -45, z: 0}
 --- !u!1001 &870563420
 PrefabInstance:
@@ -1450,6 +1451,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7888100286884508379, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel9
+      objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471691, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1464,7 +1469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471695, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7888100287163471695, guid: f00ca0fba71d3ba4797e5f24dffd4735, type: 3}
       propertyPath: m_AnchorMax.x

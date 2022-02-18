@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public int rightArrowAmount;
     static bool isEasy = false;
     public bool haveKey = false;
+    public bool isFinalLevel = false;
     private UiManager uiManager;
 
     // Start is called before the first frame update
@@ -68,32 +69,62 @@ public class GameManager : MonoBehaviour
 
     public void LevelExit()
     {
-        //TODO: once all levels are finished this code will move to the next level
         Stop();
-        uiManager.LevelExit();
-    }
-
-    //Load test level
-    public void LoadTest()
-    {
-        SceneManager.LoadScene("Test Level", LoadSceneMode.Single);
+        switch (isFinalLevel)
+        {
+            case true:
+                uiManager.FinalExit();
+                break;
+            case false:
+                uiManager.LevelExit();
+                break;
+        }
     }
 
     public void LoadLevel1()
     {
         SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
-
     public void LoadLevel2()
     {
         SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
     }
-
+    public void LoadLevelA()
+    {
+        SceneManager.LoadScene("Level A", LoadSceneMode.Single);
+    }
+    public void LoadLevelAl()
+    {
+        SceneManager.LoadScene("Level Al", LoadSceneMode.Single);
+    }
+    public void LoadLevelB()
+    {
+        SceneManager.LoadScene("Level B", LoadSceneMode.Single);
+    }
+    public void LoadLevelC()
+    {
+        SceneManager.LoadScene("Level C", LoadSceneMode.Single);
+    }
+    public void LoadLevelE()
+    {
+        SceneManager.LoadScene("Level E", LoadSceneMode.Single);
+    }
+    public void LoadLevelM()
+    {
+        SceneManager.LoadScene("Level M", LoadSceneMode.Single);
+    }
+    public void LoadLevelR()
+    {
+        SceneManager.LoadScene("Level R", LoadSceneMode.Single);
+    }
+    public void LoadLevelS()
+    {
+        SceneManager.LoadScene("Level S", LoadSceneMode.Single);
+    }
     public void LoadTitle()
     {
         SceneManager.LoadScene("Main Title", LoadSceneMode.Single);
     }
-
     public void Quit()
     {
         Application.Quit();

@@ -56,23 +56,42 @@ public class MenuManager : MonoBehaviour
     }
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        gameManager.LoadLevel1();
     }
-
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+        gameManager.LoadLevel2();
     }
-    public void LoadLevelA()
+    public void LoadLevel3()
     {
-        SceneManager.LoadScene("Level A", LoadSceneMode.Single);
+        gameManager.LoadLevelA();
     }
-    public void LoadLevelB()
+    public void LoadLevel4()
     {
-        SceneManager.LoadScene("Level B", LoadSceneMode.Single);
+        gameManager.LoadLevelB();
     }
-    public void LoadLevelC()
+    public void LoadLevel5()
     {
-        SceneManager.LoadScene("Level C", LoadSceneMode.Single);
+        gameManager.LoadLevelR();
+    }
+    public void LoadLevel6()
+    {
+        gameManager.LoadLevelS();
+    }
+    public void LoadLevel7()
+    {
+        gameManager.LoadLevelAl();
+    }
+    public void LoadLevel8()
+    {
+        gameManager.LoadLevelM();
+    }
+    public void LoadLevel9()
+    {
+        gameManager.LoadLevelC();
+    }
+    public void LoadLevel10()
+    {
+        gameManager.LoadLevelE();
     }
 }
