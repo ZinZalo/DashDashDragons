@@ -41,47 +41,50 @@ public class ClickManager : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                Vector3 objPosition = hit.collider.transform.position;
-                switch (currentArrow)
+                if (hit.transform.gameObject.tag != "Obstacle")
                 {
-                    case 0:
-                        break;
-                    case 1:
-                        if (upArrowAmount > 0)
-                        {
-                            Instantiate(upArrowPrefab, objPosition, upArrowPrefab.transform.rotation);
-                            Destroy(hit.transform.gameObject);
-                            gameManager.upArrowAmount--;
-                            gameManager.currentArrow = 0;
-                        }
-                        break;
-                    case 2:
-                        if (downArrowAmount > 0)
-                        {
-                            Instantiate(downArrowPrefab, objPosition, downArrowPrefab.transform.rotation);
-                            Destroy(hit.transform.gameObject);
-                            gameManager.downArrowAmount--;
-                            gameManager.currentArrow = 0;
-                        }
-                        break;
-                    case 3:
-                        if (leftArrowAmount > 0)
-                        {
-                            Instantiate(leftArrowPrefab, objPosition, leftArrowPrefab.transform.rotation);
-                            Destroy(hit.transform.gameObject);
-                            gameManager.leftArrowAmount--;
-                            gameManager.currentArrow = 0;
-                        }
-                        break;
-                    case 4:
-                        if (rightArrowAmount > 0)
-                        {
-                            Instantiate(rightArrowPrefab, objPosition, rightArrowPrefab.transform.rotation);
-                            Destroy(hit.transform.gameObject);
-                            gameManager.rightArrowAmount--;
-                            gameManager.currentArrow = 0;
-                        }
-                        break;
+                    Vector3 objPosition = hit.collider.transform.position;
+                    switch (currentArrow)
+                    {
+                        case 0:
+                            break;
+                        case 1:
+                            if (upArrowAmount > 0)
+                            {
+                                Instantiate(upArrowPrefab, objPosition, upArrowPrefab.transform.rotation);
+                                Destroy(hit.transform.gameObject);
+                                gameManager.upArrowAmount--;
+                                gameManager.currentArrow = 0;
+                            }
+                            break;
+                        case 2:
+                            if (downArrowAmount > 0)
+                            {
+                                Instantiate(downArrowPrefab, objPosition, downArrowPrefab.transform.rotation);
+                                Destroy(hit.transform.gameObject);
+                                gameManager.downArrowAmount--;
+                                gameManager.currentArrow = 0;
+                            }
+                            break;
+                        case 3:
+                            if (leftArrowAmount > 0)
+                            {
+                                Instantiate(leftArrowPrefab, objPosition, leftArrowPrefab.transform.rotation);
+                                Destroy(hit.transform.gameObject);
+                                gameManager.leftArrowAmount--;
+                                gameManager.currentArrow = 0;
+                            }
+                            break;
+                        case 4:
+                            if (rightArrowAmount > 0)
+                            {
+                                Instantiate(rightArrowPrefab, objPosition, rightArrowPrefab.transform.rotation);
+                                Destroy(hit.transform.gameObject);
+                                gameManager.rightArrowAmount--;
+                                gameManager.currentArrow = 0;
+                            }
+                            break;
+                    }
                 }
             }
         }
