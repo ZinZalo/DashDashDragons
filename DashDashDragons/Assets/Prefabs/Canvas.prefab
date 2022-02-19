@@ -2050,7 +2050,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5024251753720390481}
         m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: LoadTitle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
