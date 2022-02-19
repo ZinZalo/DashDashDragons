@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2544081399740274682}
   - component: {fileID: 336243592838406960}
   - component: {fileID: 5589399435447652680}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: arrowblock_down
   m_TagString: ArrowDown
   m_Icon: {fileID: 0}

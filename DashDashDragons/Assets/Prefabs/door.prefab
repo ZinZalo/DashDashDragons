@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5802856976081799702}
   - component: {fileID: 6550533606961161305}
   - component: {fileID: 1288783140694655174}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6441524253440013679}
   - component: {fileID: 7983544838116473546}
   - component: {fileID: 5273654633171324416}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 8813936744650473352}
   - component: {fileID: 1479853063620942263}
   - component: {fileID: 2527954227078114542}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

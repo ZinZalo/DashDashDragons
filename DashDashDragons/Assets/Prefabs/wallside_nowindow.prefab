@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5320545052521448968}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wallside_nowindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,6 +82,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6414186734731381376, guid: a8b0f11a8700fea4c822b3de2a0e5a83, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -5030412936178972277, guid: a8b0f11a8700fea4c822b3de2a0e5a83, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -90,9 +94,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b5e9a8f8fc6ff4e4e9804bf9fe55f54b, type: 2}
+    - target: {fileID: 97711592029150824, guid: a8b0f11a8700fea4c822b3de2a0e5a83, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a8b0f11a8700fea4c822b3de2a0e5a83, type: 3}
       propertyPath: m_Name
       value: MOLEMMATSEINATREUNA4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8b0f11a8700fea4c822b3de2a0e5a83, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b0f11a8700fea4c822b3de2a0e5a83, type: 3}

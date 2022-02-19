@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5535857676718632908}
   - component: {fileID: 8898139449307816041}
   - component: {fileID: 6672221277562934435}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Skybox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

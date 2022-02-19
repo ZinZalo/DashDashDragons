@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8846887086887456950}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: door_locked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,9 +82,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4806973903773552403, guid: 77ff08e40d9d5f6499384c3b94fe549b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 77ff08e40d9d5f6499384c3b94fe549b, type: 3}
       propertyPath: m_Name
       value: arc
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77ff08e40d9d5f6499384c3b94fe549b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569061999663640484, guid: 77ff08e40d9d5f6499384c3b94fe549b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 77ff08e40d9d5f6499384c3b94fe549b, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ff08e40d9d5f6499384c3b94fe549b, type: 3}

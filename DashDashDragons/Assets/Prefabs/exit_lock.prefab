@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3519247393249582772}
   - component: {fileID: 1671424328971627134}
   - component: {fileID: 614157719053614895}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: exit_lock
   m_TagString: FinishLock
   m_Icon: {fileID: 0}

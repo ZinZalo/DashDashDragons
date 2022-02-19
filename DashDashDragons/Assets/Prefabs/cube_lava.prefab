@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cube_lava
       objectReference: {fileID: 0}
+    - target: {fileID: 369641859007710807, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1038902026113998061, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -71,5 +75,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3909904339744192060, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}

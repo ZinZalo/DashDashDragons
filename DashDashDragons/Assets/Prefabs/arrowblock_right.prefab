@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4637601669070723958}
   - component: {fileID: 7473975835597795260}
   - component: {fileID: 3351803491707968964}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: arrowblock_right
   m_TagString: ArrowRight
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3105642680677404452}
   - component: {fileID: 5661681255356868956}
   - component: {fileID: 4169755016928961192}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3076491956694262130}
   - component: {fileID: 7633511547384597256}
   - component: {fileID: 5732795945464812347}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 530356045149759659}
   - component: {fileID: 759847606333486080}
   - component: {fileID: 2624169704865578215}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 9100111412181639565}
   - component: {fileID: 6781721083892793844}
   - component: {fileID: 2731729427080371337}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 942063313311400420}
   - component: {fileID: 6281403974617281600}
   - component: {fileID: 8056514459165131915}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 740603858753795027}
   - component: {fileID: 4347161283134449508}
   - component: {fileID: 3261000388364442563}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: castle_corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 2368795699017034656}
   - component: {fileID: 3819242094653172759}
   - component: {fileID: 8556330128711953079}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 7443691303186459164}
   - component: {fileID: 6730410544883703037}
   - component: {fileID: 3888890298327647926}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 8062671782007608251}
   - component: {fileID: 63508115270078757}
   - component: {fileID: 1640552145799548116}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: front (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

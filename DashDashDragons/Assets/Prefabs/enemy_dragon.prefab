@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 571539695}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player Move Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 1249307127185570340}
   - component: {fileID: 9134579518760456624}
   - component: {fileID: 6899440777787929424}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 410813708}
   - component: {fileID: 3821495527228589353}
   - component: {fileID: 410813710}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: enemy_dragon
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 3439771380824393413}
   - component: {fileID: 4080144316006359727}
   - component: {fileID: 8302920379232985076}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 3766252978440484416}
   - component: {fileID: 2390850593549594265}
   - component: {fileID: 8045705998383114691}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 6728457036856538321}
   - component: {fileID: 7158717361823295305}
   - component: {fileID: 669970133871799795}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 3926894966058741934}
   - component: {fileID: 8958376346646545048}
   - component: {fileID: 7864214363261947966}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 9156108949977705018}
   - component: {fileID: 536494600301671720}
   - component: {fileID: 910220073524909941}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: horn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

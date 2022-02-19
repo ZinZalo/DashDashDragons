@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1059913992379605671}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wallside_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,13 +82,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6624397486542494879, guid: b8d2a0d0ab109ec4099e9d36d44aae0f, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -3699110631358112392, guid: b8d2a0d0ab109ec4099e9d36d44aae0f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 21830996eb60d3d429832c101acad74a, type: 2}
+    - target: {fileID: -3177553206890294424, guid: b8d2a0d0ab109ec4099e9d36d44aae0f, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b8d2a0d0ab109ec4099e9d36d44aae0f, type: 3}
       propertyPath: m_Name
       value: MOLEMMATSEINATREUNA3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b8d2a0d0ab109ec4099e9d36d44aae0f, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7376869546967133826, guid: b8d2a0d0ab109ec4099e9d36d44aae0f, type: 3}
       propertyPath: m_Materials.Array.data[0]
