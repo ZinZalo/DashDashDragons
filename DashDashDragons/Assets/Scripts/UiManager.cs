@@ -11,6 +11,7 @@ public class UiManager : MonoBehaviour
     public GameObject gameEndButton;
     public GameObject gameEndText;
     public GameObject keyIndicator;
+    public GameObject playButton;
     private int upArrowAmount;
     private int downArrowAmount;
     private int leftArrowAmount;
@@ -103,11 +104,13 @@ public class UiManager : MonoBehaviour
     public void LevelExit()
     {
         nextLevel.gameObject.SetActive(true);
+        playButton.gameObject.SetActive(false);
     }
     public void FinalExit()
     {
         gameEndButton.gameObject.SetActive(true);
         gameEndText.gameObject.SetActive(true);
+        playButton.gameObject.SetActive(false);
     }
     public void LoadLevel1()
     {

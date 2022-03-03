@@ -1442,6 +1442,7 @@ MonoBehaviour:
   gameEndButton: {fileID: 4691031258146566509}
   gameEndText: {fileID: 5052069225017851688}
   keyIndicator: {fileID: 185023629682195062}
+  playButton: {fileID: 7888100287403008914}
   upArrowButton: {fileID: 7888100287003189302}
   downArrowButton: {fileID: 7888100287260995147}
   leftArrowButton: {fileID: 7888100288303973487}
