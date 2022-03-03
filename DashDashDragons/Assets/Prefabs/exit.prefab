@@ -59,5 +59,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Finish
       objectReference: {fileID: 0}
+    - target: {fileID: 1671424328971627134, guid: 879777a07c626ee4b9ea2f5d253d9178, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671424328971627134, guid: 879777a07c626ee4b9ea2f5d253d9178, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8603e4e2ccf86d842971d8be5436fe45, type: 2}
+    - target: {fileID: 1671424328971627134, guid: 879777a07c626ee4b9ea2f5d253d9178, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 879777a07c626ee4b9ea2f5d253d9178, type: 3}
