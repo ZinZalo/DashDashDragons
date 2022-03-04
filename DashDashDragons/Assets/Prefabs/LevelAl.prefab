@@ -360,6 +360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cube_light (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 369641859007710807, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
+      propertyPath: m_TagString
+      value: BlockArrow
+      objectReference: {fileID: 0}
     - target: {fileID: 1038902026113998061, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2653,6 +2657,10 @@ PrefabInstance:
     - target: {fileID: 369641859007710807, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
       propertyPath: m_Name
       value: cube_light (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 369641859007710807, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
+      propertyPath: m_TagString
+      value: BlockArrow
       objectReference: {fileID: 0}
     - target: {fileID: 1038902026113998061, guid: 2ee38d0c459d1c042a381d86b3967482, type: 3}
       propertyPath: m_RootOrder

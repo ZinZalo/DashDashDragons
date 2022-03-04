@@ -42,12 +42,14 @@ public class DetectCollisions : MonoBehaviour
             case "Enemy":
                 if (player.tag != "Enemy")
                 {
+                    playerController.PlayEnemyHitSound();
                     GetComponent<PlayerController>().enabled = false;
                 }
                 break;
             case "Finish":
                 if (player.tag != "Enemy")
                 {
+                    playerController.PlayExitSound();
                     gameManager.LevelExit();
                     Debug.Log("FINISH!");
                 }
@@ -55,6 +57,7 @@ public class DetectCollisions : MonoBehaviour
             case "Key":
                 if (player.tag != "Enemy")
                 {
+                    playerController.PlayKeyPickupSound();
                     gameManager.KeyGetter();
                     Destroy(other.gameObject);
                 }
@@ -64,6 +67,7 @@ public class DetectCollisions : MonoBehaviour
                 {
                     if (gameManager.haveKey == true)
                     {
+                        playerController.PlayExitSound();
                         gameManager.LevelExit();
                         Debug.Log("FINISH!");
                     }

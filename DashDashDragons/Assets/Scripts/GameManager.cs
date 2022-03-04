@@ -33,6 +33,17 @@ public class GameManager : MonoBehaviour
         {
             upArrowAmount = downArrowAmount = leftArrowAmount = rightArrowAmount = 999;
         }
+        string scene = SceneManager.GetActiveScene().name;
+        Debug.Log(scene);
+        if (scene == "Main title")
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<MusicClass>().StopMusic();
+        }
+        else if (scene != "Main title")
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<MusicClass>().PlayMusic();
+        }
+        
     }
 
     // Update is called once per frame

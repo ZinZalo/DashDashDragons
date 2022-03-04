@@ -41,7 +41,7 @@ public class ClickManager : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.transform.gameObject.tag != "Obstacle")
+                if (hit.transform.gameObject.tag != "Obstacle" && hit.transform.gameObject.tag != "BlockArrow")
                 {
                     Vector3 objPosition = hit.collider.transform.position;
                     switch (currentArrow)

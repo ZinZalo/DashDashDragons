@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour
     public float eulerRotationY;
     //raycast to detect objects between player and movePoint
     private RaycastHit hit;
+    //sounds
+    public AudioClip enemyHitSound;
+    public AudioClip keyPickupSound;
+    public AudioClip exitSound;
+    private AudioSource playerAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +30,7 @@ public class PlayerController : MonoBehaviour
         PlayerDirection();
         movePoint.parent = null;
         movePoint.position += vectorMove;
-
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -92,6 +97,17 @@ public class PlayerController : MonoBehaviour
             player.transform.Rotate(0f, 90f, 0f);
             rotationY = 0;
         }
-
+    }
+    public void PlayEnemyHitSound()
+    {
+        playerAudio.PlayOneShot(enemyHitSound, 1.0f);
+    }
+    public void PlayKeyPickupSound()
+    {
+        playerAudio.PlayOneShot(keyPickupSound, 1.0f);
+    }
+    public void PlayExitSound()
+    {
+        playerAudio.PlayOneShot(exitSound, 1.0f);
     }
 }
